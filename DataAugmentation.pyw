@@ -6,6 +6,7 @@ import glob
 # テーマの選択
 sg.theme("LightBlue6")
 
+# レイアウトの作成
 layout = [[sg.T("◆データ拡張したい画像が格納されたフォルダを選択してください。")],
           [sg.B(" 参照 ", k="btn1"), sg.T(k="txt1", font=(None,8))],
           [sg.T("◆データ拡張の条件を選択してください。")],
