@@ -6,6 +6,7 @@ import glob
 # テーマの選択
 sg.theme("LightBlue6")
 
+# レイアウトの作成
 layout = [[sg.T("◆データ拡張したい画像が格納されたフォルダを選択してください。")],
           [sg.B(" 参照 ", k="btn1"), sg.T(k="txt1", font=(None,8))],
           [sg.T("◆データ拡張の条件を選択してください。")],
@@ -79,7 +80,7 @@ def execute():
 
     # データ拡張の実行
     for i, file in enumerate(files):
-        img = np.array(Image.open(file))
+        img = np.array(Image.open(file).convert('RGB'))
 
         # 回転処理
         if v["rad1"] == True:
@@ -98,8 +99,12 @@ def execute():
             img = Image.fromarray(np.fliplr(img))
     
         # データ拡張画像の保存
-        img.save(savepath + "/{0:06d}_augmented.jpg".format(i))
-        win["txt3"].update("保存完了")
+        try:
+            img.save(savepath + "/{0:06d}_augmented.jpg".format(i))
+            win["txt3"].update("保存完了")
+        except FileNotFoundError:
+            sg.PopupTimed("保存先フォルダが見つかりません。")
+            return
 
 while True:
     e, v = win.read()
