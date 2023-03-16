@@ -26,7 +26,7 @@ win = sg.Window("一括データ拡張アプリ", layout, font=(None,14), size=(
 # 画像参照フォルダ選択部分の作成
 imagespath = None
 def loadImageFolder():
-    global loadname1, imagespath
+    global imagespath
     # 画像参照フォルダの読み込み
     loadname1 = sg.popup_get_folder("画像が格納されたフォルダを選択してください。")
     
@@ -42,7 +42,7 @@ def loadImageFolder():
 # 保存先フォルダ選択部分の作成
 savepath = None
 def loadSaveFolder():
-    global loadname2, savepath
+    global savepath
     # 保存先フォルダの読み込み
     loadname2 = sg.popup_get_folder("保存先フォルダを選択してください。")
     
