@@ -1,5 +1,5 @@
 <h1>一括データ拡張アプリ</h1>
-
+![DataAugmentation](https://user-images.githubusercontent.com/125285302/226164756-b77edd52-a88e-4411-9630-d35db4eb2083.jpg)
 <h2>概要</h2>
 <p>フォルダ内の画像を一括でデータ拡張するデスクトップアプリです。<br>.jpeg、.jpg、.pngファイルに対応しています。</p>
 <h2>起動方法</h2>
