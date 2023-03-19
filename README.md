@@ -1,7 +1,7 @@
 <h1>一括データ拡張アプリ</h1>
 <img src="https://raw.githubusercontent.com/oiudon/data-augmentation/main/DataAugmentation.jpg">
 <h2>概要</h2>
-<p>フォルダ内の画像を一括でデータ拡張するデスクトップアプリです。<br>.jpeg、.jpg、.pngファイルに対応しています。</p>
+<p>フォルダ内の画像を一括でデータ拡張するデスクトップアプリです。PySimpleGUIで作成しました。<br>.jpeg、.jpg、.pngファイルに対応しています。</p>
 <h2>起動方法</h2>
 <ol>
   <li>「DataAugmentation.zip」を展開する。</li>
