@@ -1,5 +1,5 @@
 <h1>一括データ拡張アプリ</h1>
-<img src="https://user-images.githubusercontent.com/125285302/226239600-f4bf8beb-154e-46ed-81af-b868a2404943.jpg">
+<img src="https://user-images.githubusercontent.com/125285302/226239600-f4bf8beb-154e-46ed-81af-b868a2404943.jpg" width=576px>
 <h2>概要</h2>
 <p>フォルダ内の画像を一括でデータ拡張するデスクトップアプリです。PySimpleGUIで作成しました。<br>.jpeg、.jpg、.pngファイルに対応しています。</p>
 <h2>使用言語など</h2>
